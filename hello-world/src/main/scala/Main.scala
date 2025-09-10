@@ -51,19 +51,6 @@ object HW1 {
     length * width * height
   }
 
-   // Problem 4:
-  
-  // Solved by myself: Y
-  // Time taken: about 15 mins
-
-  // [contract] gcd: (Int, Int) -> Int
-  // [purpose] To find the greatest common divisor (GCD) of two integers using recursion.
-  // [tests] gcd(48, 18) => 6
-  //         gcd(101, 103) => 1
-  //         gcd(270, 192) => 6
-  def gcd(a: Int, b: Int): Int = {
-    if (b == 0) a else gcd(b, a % b)
-  }
 
   // Problem 5:
 
@@ -126,7 +113,10 @@ object HW1 {
     if (safe) "safe" else "unsafe"
   }
 
-
+  //problem 7: nameAlphabet
+  // Solved by myself: Y
+  // Time taken: about 20 mins 
+   
   // ... (8번 문제까지 계속) ...
 
 

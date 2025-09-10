@@ -153,3 +153,45 @@ If the error persists, please report the issue as a bug and attach a log with in
 2025.09.10 12:28:50 INFO  time: compiled hello-world in 0.28s
 9월 10, 2025 12:29:47 오후 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 정보: Unsupported notification method: $/setTrace
+2025.09.10 12:43:34 INFO  Shutting down server
+2025.09.10 12:43:34 INFO  shutting down Metals
+2025.09.10 12:43:34 INFO  Shut down connection with build server.
+2025.09.10 12:43:34 INFO  Shut down connection with build server.
+2025.09.10 12:43:34 INFO  Exiting server
+2025.09.10 18:30:20 INFO  Started: Metals version 1.6.2 in folders '/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world' for client Visual Studio Code 1.103.2.
+2025.09.10 18:30:20 INFO  Attempting to connect to the build server...
+2025.09.10 18:30:20 INFO  Found a Bloop server running
+2025.09.10 18:30:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.10 18:30:20 INFO  Attempting to connect to the build server...
+2025.09.10 18:30:20 INFO  Found a Bloop server running
+2025.09.10 18:30:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/project/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.10 18:30:21 INFO  time: Connected to build server in 0.31s
+2025.09.10 18:30:21 INFO  Connected to Build server: Bloop v2.0.13
+2025.09.10 18:30:21 WARN  2.13.12 is no longer supported in the current Metals versions, using the last known supported version 1.4.2
+2025.09.10 18:30:23 INFO  time: indexed workspace in 2.83s
+2025.09.10 18:30:30 INFO  compiling hello-world (1 scala source)
+2025.09.10 18:30:30 INFO  time: compiled hello-world in 0.24s
+9월 10, 2025 6:30:32 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+경고: Unmatched cancel notification for request id 12
+9월 10, 2025 6:30:32 오후 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+경고: Unmatched cancel notification for request id 13
+2025.09.10 18:30:43 INFO  [0m[31m[E][0m Caught java.lang.InterruptedException
+2025.09.10 18:30:43 INFO  [0m[31m[E][0m Caught java.lang.InterruptedException
+2025.09.10 18:30:43 ERROR Bloop 'bsp' command exited with code 1. Something may be wrong with the current configuration.
+Running the [1mclean[0m sub-command to clear the working directory and remove caches might help.
+If the error persists, please report the issue as a bug and attach a log with increased verbosity by passing [1m-v -v -v[0m.
+2025.09.10 18:30:43 INFO  No running Bloop server found, starting one.
+2025.09.10 18:30:43 ERROR Bloop 'bsp' command exited with code 1. Something may be wrong with the current configuration.
+Running the [1mclean[0m sub-command to clear the working directory and remove caches might help.
+If the error persists, please report the issue as a bug and attach a log with increased verbosity by passing [1m-v -v -v[0m.
+2025.09.10 18:30:43 INFO  No running Bloop server found, starting one.
+2025.09.10 18:30:44 INFO  Starting compilation server
+2025.09.10 18:30:44 INFO  Starting compilation server
+2025.09.10 18:30:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.10 18:30:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/project/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.10 18:30:47 INFO  Connected to Build server: Bloop v2.0.13
+2025.09.10 18:30:48 INFO  time: indexed workspace in 1.24s
+2025.09.10 18:30:48 INFO  compiling hello-world (1 scala source)
+2025.09.10 18:30:49 INFO  time: compiled hello-world in 1.21s
+2025.09.10 19:26:04 INFO  compiling hello-world (1 scala source)
+2025.09.10 19:26:04 INFO  time: compiled hello-world in 0.24s
