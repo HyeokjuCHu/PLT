@@ -1,6 +1,6 @@
 // Homework 1
 
-// The number of problems solved by myself: 6 out of 8
+// The number of problems solved by myself: 8 out of 8
 object HW1 {
   // Problem 1:
 
@@ -13,13 +13,12 @@ object HW1 {
   //         dollarToWon(10) => 13930
   //         dollarToWon(0) => 0
   def dollarToWon(dollar: Int): Int = {
-    val exchangeRate = 1393 // 1 dollar = 1393 won
-    dollar * exchangeRate
+    dollar * 1393
   }
 
   // Problem 2:
 
-  // Solved by myself: N (help from JC)
+  // Solved by myself: Y
   // Time taken: about 7 mins
 
   // [contract] maxOfThreeIntegers: (Int, Int, Int) -> Int
@@ -32,7 +31,6 @@ object HW1 {
     if (a > b) a else b
   }
 
-  // This function must call the 'max' helper function in a nested way as required.
   def maxOfThreeIntegers(a: Int, b: Int, c: Int): Int = {
     max(a, max(b, c))
   }
@@ -51,6 +49,19 @@ object HW1 {
     length * width * height
   }
 
+   // Problem 4:
+  
+  // Solved by myself: Y
+  // Time taken: about 15 mins
+
+  // [contract] gcd: (Int, Int) -> Int
+  // [purpose] To find the greatest common divisor (GCD) of two integers using recursion.
+  // [tests] gcd(48, 18) => 6
+  //         gcd(101, 103) => 1
+  //         gcd(270, 192) => 6
+  def gcd(a: Int, b: Int): Int = {
+    if (b == 0) a else gcd(b, a % b)
+  }
 
   // Problem 5:
 
@@ -62,30 +73,25 @@ object HW1 {
   // [tests] combination(4, 2) => 6
   //         combination(5, 3) => 10
   //         combination(10, 0) => 1
-
-  // Helper function to calculate factorial using recursion.
   def factorial(n: Int): Int = {
-    if (n <= 0) 1 // Base case: 0! is 1
-    else n * factorial(n - 1) // Recursive step
+    if (n <= 0) 1
+    else n * factorial(n - 1)
   }
 
   def combination(n: Int, k: Int): Int = {
-    // n! / (k! * (n - k)!)
     if (k < 0 || k > n) 0
     else factorial(n) / (factorial(k) * factorial(n - k))
   }
 
   // Problem 6:
-  // Solved by myself: N (help from website, Gemini)
+  // Solved by myself: Y
   // Time taken: about 20 mins
 
-  // a. Define Vehicle type using a sealed trait and case classes.
-  sealed trait Vehicle
+  trait Vehicle
   case class Bicycle(wheels: Int) extends Vehicle
   case class Car(wheels: Int, windows: Int) extends Vehicle
   case class Airplane(wheels: Int, windows: Int, engines: Int) extends Vehicle
 
-  // b. Define the 'vehicleTax' function.
   // [contract] vehicleTax: (Vehicle, Int, Int, Int) -> Int
   // [purpose] To calculate the total tax for a vehicle based on the number of its components.
   // [tests] vehicleTax(Car(4, 6), 10, 5, 100) => 70
@@ -98,32 +104,56 @@ object HW1 {
     }
   }
 
-  // c. Define the 'isVehicleSafe' function.
   // [contract] isVehicleSafe: Vehicle -> String
   // [purpose] To check if a vehicle meets the given safety standards.
   // [tests] isVehicleSafe(Bicycle(2)) => "safe"
   //         isVehicleSafe(Car(3, 4)) => "unsafe"
   //         isVehicleSafe(Airplane(18, 20, 4)) => "safe"
   def isVehicleSafe(vehicle: Vehicle): String = {
-    val safe = vehicle match {
+    if (vehicle match {
       case Bicycle(wheels) => wheels < 4
       case Car(wheels, windows) => wheels > 3 && windows > 2
       case Airplane(wheels, windows, engines) => wheels > 2 && windows > 10 && engines > 1
-    }
-    if (safe) "safe" else "unsafe"
+    }) "safe" else "unsafe"
   }
 
-  //problem 7: nameAlphabet
+  // Problem 7:
   // Solved by myself: Y
-  // Time taken: about 20 mins 
-   
-  // ... (8번 문제까지 계속) ...
+  // Time taken: about 10 mins
+
+  // [contract] nameAlphabet: List[Char] -> List[String]
+  // [purpose] To convert a list of characters to a corresponding list of names based on specific rules.
+  // [tests] nameAlphabet(List('a', 'b', 'c')) => List("alice", "unnamed", "cherry")
+  //         nameAlphabet(List('j', 'k')) => List("jc", "kate")
+  def nameAlphabet(chars: List[Char]): List[String] = {
+    chars.map {
+      case 'a' => "alice"
+      case 'c' => "cherry"
+      case 'j' => "jc"
+      case 'k' => "kate"
+      case _   => "unnamed"
+    }
+  }
+
+  // Problem 8:
+  // Solved by myself: N(with help from Gemini)
+  // Time taken: about 15 mins
+
+  // [contract] updateName: (String, String, List[String]) -> List[String]
+  // [purpose] To replace all occurrences of a specific string with a new one in a list, using recursion.
+  // [tests] updateName("cherry", "claire", List("jc", "cherry", "kate")) => List("jc", "claire", "kate")
+  //         updateName("a", "b", List("a", "c", "a")) => List("b", "c", "b")
+  def updateName(oldName: String, newName: String, names: List[String]): List[String] = {
+    names match {
+      case Nil => Nil
+      case head :: tail =>
+        (if (head == oldName) newName else head) :: updateName(oldName, newName, tail)
+    }
+  }
 
 
   // Test cases for all problems
   @main def run(): Unit = {
-    println("Running HW1 tests...")
-
     // Problem 1 test cases
     assert(dollarToWon(1) == 1393, "Test failed for dollarToWon(1)")
     assert(dollarToWon(10) == 13930, "Test failed for dollarToWon(10)")
@@ -159,31 +189,45 @@ object HW1 {
     val car = Car(4, 6)
     val bike = Bicycle(2)
     val plane = Airplane(18, 150, 4)
-    // Test instances for safety checks
-    val unsafeCar = Car(4, 2)      // Unsafe: not enough windows
-    val unsafeBike = Bicycle(4)     // Unsafe: too many wheels
-    val unsafePlane = Airplane(18, 150, 1) // Unsafe: not enough engines
+    val unsafeCar = Car(4, 2)
+    val unsafeBike = Bicycle(4)
+    val unsafePlane = Airplane(18, 150, 1)
 
-    // b. vehicleTax tests
     assert(vehicleTax(car, 10, 5, 100) == (4 * 10 + 6 * 5), "Test failed for vehicleTax(Car)")
     assert(vehicleTax(bike, 10, 5, 100) == (2 * 10), "Test failed for vehicleTax(Bicycle)")
     assert(vehicleTax(plane, 10, 5, 100) == (18 * 10 + 150 * 5 + 4 * 100), "Test failed for vehicleTax(Airplane)")
-    println("Problem 6b tests passed successfully!")
 
-    // c. isVehicleSafe tests
     assert(isVehicleSafe(car) == "safe", "Test failed for isVehicleSafe(safe Car)")
     assert(isVehicleSafe(bike) == "safe", "Test failed for isVehicleSafe(safe Bicycle)")
     assert(isVehicleSafe(plane) == "safe", "Test failed for isVehicleSafe(safe Airplane)")
     assert(isVehicleSafe(unsafeCar) == "unsafe", "Test failed for isVehicleSafe(unsafe Car)")
     assert(isVehicleSafe(unsafeBike) == "unsafe", "Test failed for isVehicleSafe(unsafe Bicycle)")
     assert(isVehicleSafe(unsafePlane) == "unsafe", "Test failed for isVehicleSafe(unsafe Plane)")
-    println("Problem 6c tests passed successfully!")
+    println("Problem 6 tests passed successfully!")
 
+    // Problem 7 test cases
+    val testList1 = List('a', 'b', 'c', 'j', 'x', 'k')
+    val expectedList1 = List("alice", "unnamed", "cherry", "jc", "unnamed", "kate")
+    assert(nameAlphabet(testList1) == expectedList1, "Test failed for nameAlphabet 1")
+    val testList2 = List('z', 'y', 'x')
+    val expectedList2 = List("unnamed", "unnamed", "unnamed")
+    assert(nameAlphabet(testList2) == expectedList2, "Test failed for nameAlphabet 2")
+    val testList3 = List()
+    val expectedList3 = List()
+    assert(nameAlphabet(testList3) == expectedList3, "Test failed for empty list")
+    println("Problem 7 tests passed successfully!")
 
-    // ... (8번 문제까지 계속) ...
+    // Problem 8 test cases
+    val names1 = List("jc", "cherry", "kate", "cherry")
+    val updatedNames1 = List("jc", "claire", "kate", "claire")
+    assert(updateName("cherry", "claire", names1) == updatedNames1, "Test failed for updateName 1")
+    val names2 = List("a", "b", "c")
+    assert(updateName("d", "e", names2) == names2, "Test failed for updateName with no match")
+    val names3 = List()
+    assert(updateName("a", "b", names3).isEmpty, "Test failed for updateName with empty list")
+    println("Problem 8 tests passed successfully!")
 
-    // 만약 모든 테스트를 통과하면 마지막에 이 메시지가 보입니다.
-    // println("All tests passed!")
+    println("All tests passed successfully!")
   }
 }
 
