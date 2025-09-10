@@ -1,0 +1,155 @@
+2025.09.09 23:11:18 INFO  Started: Metals version 1.6.2 in folders '/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world' for client Visual Studio Code 1.103.2.
+2025.09.09 23:11:22 INFO  running '/opt/homebrew/Cellar/openjdk@17/17.0.16/libexec/openjdk.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/fs/d4rgqjr113q5r9bcq6lhpnyr0000gn/T/metals9127027346868080606/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2025.09.09 23:11:23 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:11:23 WARN  no build target for: /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/project/metals.sbt
+2025.09.09 23:11:23 WARN  no build target for: /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/project/project/metals.sbt
+2025.09.09 23:11:23 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/project/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:11:24 INFO  [info] welcome to sbt 1.11.6 (Homebrew Java 17.0.16)
+2025.09.09 23:11:24 INFO  [info] loading settings for project hello-world-build-build from metals.sbt...
+2025.09.09 23:11:25 INFO  [info] loading project definition from /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/project/project
+2025.09.09 23:11:25 INFO  [info] loading settings for project hello-world-build from metals.sbt...
+2025.09.09 23:11:25 INFO  [info] loading project definition from /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/project
+2025.09.09 23:11:27 INFO  [success] Generated .bloop/hello-world-build.json
+2025.09.09 23:11:27 INFO  [success] Total time: 1 s, completed 2025. 9. 9. 오후 11:11:27
+2025.09.09 23:11:27 INFO  [info] loading settings for project hello-world from build.sbt...
+2025.09.09 23:11:27 INFO  [info] set current project to hello-world (in build file:/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/)
+2025.09.09 23:11:30 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:11:30 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:13:33 INFO  [success] Generated .bloop/hello-world-test.json
+2025.09.09 23:13:33 INFO  [success] Generated .bloop/hello-world.json
+2025.09.09 23:13:33 INFO  [success] Total time: 126 s (0:02:06.0), completed 2025. 9. 9. 오후 11:13:33
+2025.09.09 23:13:33 INFO  time: ran 'sbt bloopInstall' in 2m10s
+2025.09.09 23:13:33 INFO  Attempting to connect to the build server...
+2025.09.09 23:13:33 INFO  No running Bloop server found, starting one.
+2025.09.09 23:15:23 INFO  Starting compilation server
+2025.09.09 23:15:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.09 23:15:35 WARN  no build target for: /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala
+2025.09.09 23:15:35 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:15:35 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:15:38 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:15:40 ERROR Bloop 'bsp' command exited with code 1. Something may be wrong with the current configuration.
+Running the [1mclean[0m sub-command to clear the working directory and remove caches might help.
+If the error persists, please report the issue as a bug and attach a log with increased verbosity by passing [1m-v -v -v[0m.
+2025.09.09 23:15:44 ERROR Timeout waiting for 'build/initialize' response
+2025.09.09 23:15:44 WARN  Retrying connection to the build server Bloop
+2025.09.09 23:15:44 INFO  Found a Bloop server running
+2025.09.09 23:15:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.09 23:16:04 ERROR Timeout waiting for 'build/initialize' response
+2025.09.09 23:16:04 WARN  Retrying connection to the build server Bloop
+2025.09.09 23:16:04 INFO  Found a Bloop server running
+2025.09.09 23:16:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.09 23:16:24 ERROR Timeout waiting for 'build/initialize' response
+2025.09.09 23:16:24 WARN  Retrying connection to the build server Bloop
+2025.09.09 23:16:24 INFO  Found a Bloop server running
+2025.09.09 23:16:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.09 23:16:44 ERROR Timeout waiting for 'build/initialize' response
+2025.09.09 23:16:44 WARN  Retrying connection to the build server Bloop
+2025.09.09 23:16:44 INFO  Found a Bloop server running
+2025.09.09 23:16:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.09 23:17:04 ERROR Timeout waiting for 'build/initialize' response
+2025.09.09 23:17:04 WARN  Retrying connection to the build server Bloop
+2025.09.09 23:17:04 INFO  Found a Bloop server running
+2025.09.09 23:17:04 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:17:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.09 23:17:04 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:17:05 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:17:06 WARN  no build target for: /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala
+2025.09.09 23:17:06 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:17:06 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:17:24 ERROR Timeout waiting for 'build/initialize' response
+2025.09.09 23:17:24 ERROR Bloop server PID: 6295
+Ignoring SIGINT
+Will truncate output file /Users/hyeokjukwon/Library/Caches/ScalaCli/bloop/daemon/output every 5 minutes
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by monix.execution.internal.atomic.NormalJava8BoxedObject (file:/Users/hyeokjukwon/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/monix/monix-execution_2.12/3.2.0/monix-execution_2.12-3.2.0.jar)
+WARNING: Please consider reporting this to the maintainers of class monix.execution.internal.atomic.NormalJava8BoxedObject
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+Unable to load nailgun-version.properties.
+NGServer [UNKNOWN] started on local socket /Users/hyeokjukwon/Library/Caches/ScalaCli/bloop/daemon/socket.
+/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world
+/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world
+/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/.scala-build
+/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/.scala-build
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by com.swoval.runtime.NativeLoader in an unnamed module (file:/Users/hyeokjukwon/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/swoval/file-tree-views/2.1.12/file-tree-views-2.1.12.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+/Users/hyeokjukwon/Library/Caches/ScalaCli/bloop
+/Users/hyeokjukwon/Library/Caches/ScalaCli/bloop
+/Users/hyeokjukwon/Library/Caches/ScalaCli/bloop
+/Users/hyeokjukwon/Library/Caches/ScalaCli/bloop
+/Users/hyeokjukwon/Library/Caches/ScalaCli/bloop
+/Users/hyeokjukwon/Library/Caches/ScalaCli/bloop
+/Users/hyeokjukwon/Library/Caches/ScalaCli/bloop
+/Users/hyeokjukwon/Library/Caches/ScalaCli/bloop
+/Users/hyeokjukwon/Library/Caches/ScalaCli/bloop
+/Users/hyeokjukwon/Library/Caches/ScalaCli/bloop
+/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world
+/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world
+/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world
+/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world
+/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/.scala-build
+/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/.scala-build
+
+2025.09.09 23:17:24 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:785)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:658)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+
+2025.09.09 23:17:24 WARN  no build target for: /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala
+2025.09.09 23:17:24 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:18:04 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:18:42 WARN  no build target for: /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala
+2025.09.09 23:18:42 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:18:50 WARN  no build target for: /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala
+2025.09.09 23:18:50 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:18:57 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:19:26 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:19:28 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.09 23:19:30 INFO  Shutting down server
+2025.09.09 23:19:30 INFO  shutting down Metals
+2025.09.09 23:19:30 INFO  Exiting server
+2025.09.10 12:03:41 INFO  Started: Metals version 1.6.2 in folders '/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world' for client Visual Studio Code 1.103.2.
+2025.09.10 12:03:41 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.10 12:03:41 INFO  Attempting to connect to the build server...
+2025.09.10 12:03:41 INFO  No running Bloop server found, starting one.
+2025.09.10 12:03:42 INFO  Starting compilation server
+2025.09.10 12:03:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.10 12:03:46 INFO  Attempting to connect to the build server...
+2025.09.10 12:03:46 INFO  Found a Bloop server running
+2025.09.10 12:03:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/project/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.10 12:04:00 INFO  time: Connected to build server in 18s
+2025.09.10 12:04:00 INFO  Connected to Build server: Bloop v2.0.13
+2025.09.10 12:04:00 WARN  2.13.12 is no longer supported in the current Metals versions, using the last known supported version 1.4.2
+2025.09.10 12:04:47 ERROR Bloop 'bsp' command exited with code 1. Something may be wrong with the current configuration.
+Running the [1mclean[0m sub-command to clear the working directory and remove caches might help.
+If the error persists, please report the issue as a bug and attach a log with increased verbosity by passing [1m-v -v -v[0m.
+2025.09.10 12:04:47 ERROR Bloop 'bsp' command exited with code 1. Something may be wrong with the current configuration.
+Running the [1mclean[0m sub-command to clear the working directory and remove caches might help.
+If the error persists, please report the issue as a bug and attach a log with increased verbosity by passing [1m-v -v -v[0m.
+2025.09.10 12:04:47 INFO  No running Bloop server found, starting one.
+2025.09.10 12:04:47 INFO  No running Bloop server found, starting one.
+2025.09.10 12:04:47 INFO  Starting compilation server
+2025.09.10 12:04:47 INFO  Starting compilation server
+2025.09.10 12:04:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.10 12:04:48 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/project/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.10 12:04:53 INFO  time: indexed workspace in 52s
+2025.09.10 12:04:53 INFO  compiling hello-world (1 scala source)
+2025.09.10 12:04:54 INFO  time: compiled hello-world in 1.2s
+2025.09.10 12:04:54 INFO  Connected to Build server: Bloop v2.0.13
+2025.09.10 12:04:55 INFO  time: indexed workspace in 1.23s
+2025.09.10 12:04:55 INFO  compiling hello-world (1 scala source)
+2025.09.10 12:04:55 INFO  time: compiled hello-world in 0.17s
+2025.09.10 12:12:28 INFO  compiling hello-world (1 scala source)
+2025.09.10 12:12:28 INFO  time: compiled hello-world in 0.13s
+2025.09.10 12:28:50 INFO  compiling hello-world (1 scala source)
+2025.09.10 12:28:50 INFO  time: compiled hello-world in 0.28s
+9월 10, 2025 12:29:47 오후 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+정보: Unsupported notification method: $/setTrace
