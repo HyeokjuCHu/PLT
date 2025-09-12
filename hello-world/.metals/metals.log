@@ -316,3 +316,45 @@ If the error persists, please report the issue as a bug and attach a log with in
 2025.09.10 22:16:57 INFO  Connected to Build server: Bloop v2.0.13
 2025.09.10 22:28:33 INFO  compiling hello-world (1 scala source)
 2025.09.10 22:28:33 INFO  time: compiled hello-world in 0.94s
+2025.09.10 22:47:28 INFO  Shutting down server
+2025.09.10 22:47:28 INFO  shutting down Metals
+2025.09.10 22:47:28 INFO  Exiting server
+2025.09.12 10:09:20 INFO  Started: Metals version 1.6.2 in folders '/Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world' for client Visual Studio Code 1.103.2.
+2025.09.12 10:09:20 INFO  no build target found for /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/src/main/scala/Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.09.12 10:09:21 INFO  Attempting to connect to the build server...
+2025.09.12 10:09:21 INFO  Found a Bloop server running
+2025.09.12 10:09:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.12 10:09:21 INFO  Attempting to connect to the build server...
+2025.09.12 10:09:21 INFO  Found a Bloop server running
+2025.09.12 10:09:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/project/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.12 10:09:21 INFO  time: Connected to build server in 0.31s
+2025.09.12 10:09:21 INFO  Connected to Build server: Bloop v2.0.13
+9월 12, 2025 10:09:23 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+경고: Unmatched cancel notification for request id 3
+9월 12, 2025 10:09:30 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+경고: Unmatched cancel notification for request id 17
+9월 12, 2025 10:09:30 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+경고: Unmatched cancel notification for request id 18
+9월 12, 2025 10:09:30 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+경고: Unmatched cancel notification for request id 19
+2025.09.12 10:09:29 INFO  time: indexed workspace in 7.45s
+2025.09.12 10:12:21 INFO  compiling hello-world (1 scala source)
+2025.09.12 10:12:21 INFO  time: compiled hello-world in 0.5s
+2025.09.12 10:12:23 INFO  [0m[31m[E][0m Caught java.lang.InterruptedException
+2025.09.12 10:12:23 INFO  [0m[31m[E][0m Caught java.lang.InterruptedException
+2025.09.12 10:12:23 ERROR Bloop 'bsp' command exited with code 1. Something may be wrong with the current configuration.
+Running the [1mclean[0m sub-command to clear the working directory and remove caches might help.
+If the error persists, please report the issue as a bug and attach a log with increased verbosity by passing [1m-v -v -v[0m.
+2025.09.12 10:12:23 ERROR Bloop 'bsp' command exited with code 1. Something may be wrong with the current configuration.
+Running the [1mclean[0m sub-command to clear the working directory and remove caches might help.
+If the error persists, please report the issue as a bug and attach a log with increased verbosity by passing [1m-v -v -v[0m.
+2025.09.12 10:12:23 INFO  No running Bloop server found, starting one.
+2025.09.12 10:12:23 INFO  No running Bloop server found, starting one.
+2025.09.12 10:12:24 INFO  Starting compilation server
+2025.09.12 10:12:24 INFO  Starting compilation server
+2025.09.12 10:12:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.12 10:12:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/hyeokjukwon/Desktop/HGU/2025-2/PLT/hello-world/project/.metals/bsp.trace.json or /Users/hyeokjukwon/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.09.12 10:12:25 INFO  Connected to Build server: Bloop v2.0.13
+2025.09.12 10:12:26 INFO  time: indexed workspace in 1.27s
+2025.09.12 10:15:44 INFO  compiling hello-world (1 scala source)
+2025.09.12 10:15:46 INFO  time: compiled hello-world in 2.31s
